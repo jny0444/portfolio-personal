@@ -7,10 +7,6 @@
     font-family: 'Cartograph';
     src: url('../data/fonts/Cartograph\ CF\ Regular\ Italic\ Nerd\ Font\ Complete.otf') format('opentype');
 }
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
 
 body {
     background-color: rgb(245, 235, 221);
@@ -22,22 +18,20 @@ body {
     height: 100vh;
 }
 
-.container {
-    max-width: 800px;
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     width: 100%;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: center;
 }
 
 .box{
-    width: 60%; /* Set your desired width */
-    height: auto; /* Set your desired height */
-    background-color: #f0f0f0; /* Set your desired background color */
-    text-align: center; /* Center text inside the box */
-    padding: 20px; /* Add some padding for spacing */
+    width: 60%; 
+    height: auto; 
+    background-color: #f0f0f0; 
+    text-align: center; 
+    padding: 20px; 
     border: 5px solid;
     box-shadow: 6px 6px 6px ;
     border-radius: 15px;
@@ -50,23 +44,22 @@ body {
     padding: 10px 0;
 }
 
-.home {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
+.home{
     border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
+    background-color: #f0f0f0;
+    padding-left:8px;
+    padding-right: 8px;
 }
 
 .home:hover{
-    background-color: #0056b3;
+    background-color: #cfcdcd;
     border: 0px;
     box-shadow: 2px 2px 3px; 
     padding-left:8px;
     padding-right: 8px;
 }
+
+
 
 a {
     font-family: Iosevka;
@@ -84,7 +77,7 @@ a {
     color: #333;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
-    font-weight: bold;
+    
 }
 
 .header-button:hover{

@@ -79,3 +79,27 @@ a {
     border-radius: 5px;
     box-shadow: 2px 2px 3px; 
 }
+@media screen and (max-width: 768px) {
+    .box {
+        width: 90%; /* Adjust the width for smaller screens */
+    }
+
+    .header-button {
+        font-size: 14px; /* Reduce font size for header buttons */
+    }
+
+    /* Adjust other styles as needed for smaller screens */
+}
+
+/* Add responsive styles for even smaller screens (e.g., smartphones) */
+@media screen and (max-width: 480px) {
+    .box {
+        width: 95%; /* Further reduce width for smaller screens */
+    }
+
+    .header-button {
+        font-size: 12px; /* Reduce font size for header buttons on smaller screens */
+    }
+
+    /* Adjust other styles as needed for even smaller screens */
+}
