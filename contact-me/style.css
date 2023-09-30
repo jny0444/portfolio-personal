@@ -1,0 +1,247 @@
+@font-face {
+    font-family: Iosevka;
+    src: url('../data/fonts/iosevka-regular.ttc') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cartograph';
+    src: url('../data/fonts/Cartograph\ CF\ Regular\ Italic\ Nerd\ Font\ Complete.otf') format('opentype');
+}
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(245, 235, 221);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box{
+    width: 60%; /* Set your desired width */
+    height: auto; /* Set your desired height */
+    background-color: #f0f0f0; /* Set your desired background color */
+    text-align: center; /* Center text inside the box */
+    padding: 20px; /* Add some padding for spacing */
+    border: 5px solid;
+    box-shadow: 6px 6px 6px ;
+    border-radius: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.home {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home:hover{
+    background-color: #0056b3;
+    border: 0px;
+    box-shadow: 2px 2px 3px; 
+    padding-left:8px;
+    padding-right: 8px;
+}
+
+a {
+    font-family: Iosevka;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header-button {
+    padding: 7px 11px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.header-button:hover{
+    background-color: #cfcdcd;
+    border: 0px;
+    box-shadow: 2px 2px 3px; 
+}
+
+.header-button#contact-me {
+    background-color: #cfcdcd;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px; 
+}
+
+
+
+
+
+
+
+
+
+.contact-form {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Group the subject and message input fields */
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.contact-form .form-group label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 95%;
+    max-width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.contact-form form textarea {
+    resize: vertical;
+}
+
+.contact-form form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.contact-form form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+}
+
+/* Form input placeholders */
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder {
+    color: #888;
+}
+
+/* Error message for invalid inputs */
+.error-message {
+    color: #ff4136;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Success message after submitting the form */
+.success-message {
+    color: #28a745;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    display: none;
+}
+
+h2{
+    font-family: 'Iosevka';
+}
+
+label{
+    font-family: 'Iosevka';
+}
+
+.send {
+    font-family: 'Cartograph';
+}
+@media screen and (max-width: 768px) {
+    .box {
+        width: 90%; /* Adjust the width for smaller screens */
+    }
+
+    .header-button {
+        font-size: 14px; /* Reduce font size for header buttons */
+    }
+
+    /* Adjust other styles as needed for smaller screens */
+}
+
+/* Add responsive styles for even smaller screens (e.g., smartphones) */
+@media screen and (max-width: 480px) {
+    .box {
+        width: 95%; /* Further reduce width for smaller screens */
+    }
+
+    .header-button {
+        font-size: 12px; /* Reduce font size for header buttons on smaller screens */
+    }
+
+    /* Adjust other styles as needed for even smaller screens */
+}
