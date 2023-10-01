@@ -103,3 +103,34 @@ a {
 
     /* Adjust other styles as needed for even smaller screens */
 }
+
+
+.me-image{
+    margin-top: 20px;
+    height: auto;
+    width: 40%;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color:rgb(29, 27, 24);
+}
+
+.image {
+    display: flex;
+    align-items: center;
+}
+
+.abt-p {
+    font-family: 'Iosevka';
+}
+
+.abt-more {
+    font-family: 'Iosevka';
+}
+
+.abt-more {
+    display: flex;
+    justify-content: space-around;
+}
+
+
