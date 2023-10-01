@@ -201,6 +201,7 @@ a {
     margin-top: 20px;
     font-weight: bold;
     display: none;
+    font-family: 'Iosevka';
 }
 
 h2{
@@ -214,6 +215,7 @@ label{
 .send {
     font-family: 'Cartograph';
 }
+
 @media screen and (max-width: 768px) {
     .box {
         width: 90%; /* Adjust the width for smaller screens */
