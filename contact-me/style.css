@@ -229,7 +229,7 @@ label{
 /* Add responsive styles for even smaller screens (e.g., smartphones) */
 @media screen and (max-width: 480px) {
     .box {
-        width: 95%; /* Further reduce width for smaller screens */
+        width: 90%; /* Further reduce width for smaller screens */
     }
 
     .header-button {
