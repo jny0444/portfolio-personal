@@ -122,6 +122,11 @@ a {
 
 .abt-p {
     font-family: 'Iosevka';
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 25px;
+    text-align: justify;
+    line-height: 1.5em;
 }
 
 .abt-more {
@@ -133,4 +138,7 @@ a {
     justify-content: space-around;
 }
 
+li {
+    text-align: left;
+}
 
